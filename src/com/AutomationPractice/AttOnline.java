@@ -30,8 +30,8 @@ public class AttOnline {
 			if (driver.getTitle().equalsIgnoreCase("Overview Landing Page")) {
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				WebDriverWait driverWait = new WebDriverWait(driver, 60);
-				driverWait.until(
-						ExpectedConditions.visibilityOf(driver.findElement(By.xpath(".//*[@id='z1-pullMenu-open']"))));
+				//driverWait.until(
+					//	ExpectedConditions.visibilityOf(driver.findElement(By.xpath(".//*[@id='z1-pullMenu-open']"))));
 
 				if (driver.findElement(By.xpath(".//*[@id='z1-pullMenu-open']")).isEnabled()) {
 					driver.findElement(By.xpath(".//*[@id='z1-searchfield']")).sendKeys("test");

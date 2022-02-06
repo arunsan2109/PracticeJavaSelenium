@@ -85,7 +85,7 @@ public class TestPracticeFive {
 
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait driverWait = new WebDriverWait(driver, 60);
-		driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("xpath"))));
+		//driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("xpath"))));
 
 		String tableXpath = "";
 		WebElement tableData = driver.findElement(By.xpath(tableXpath));

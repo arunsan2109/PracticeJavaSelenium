@@ -85,8 +85,8 @@ public class InterviewTestTwo {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, 60);
-		webDriverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
-		webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+		//webDriverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
+		//webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
 
 		System.out.println("-----------------------------");
 

@@ -33,9 +33,9 @@ public class TestPracticeThree {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		WebDriverWait driverWait = new WebDriverWait(driver, 60);
-		driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
 
 		driver.navigate().forward();
 		driver.navigate().back();

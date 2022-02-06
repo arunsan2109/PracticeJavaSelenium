@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12112" started-at="2017-10-30T20:07:18Z" finished-at="2017-10-30T20:07:30Z">
+  <suite name="Default suite" duration-ms="45" started-at="2022-01-17T19:34:36Z" finished-at="2022-01-17T19:34:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12112" started-at="2017-10-30T20:07:18Z" finished-at="2017-10-30T20:07:30Z">
-      <class name="dummy.TestTwo">
-        <test-method status="PASS" signature="getInterviewQuestions()[pri:0, instance:dummy.TestTwo@6093dd95]" name="getInterviewQuestions" duration-ms="12098" started-at="2017-10-31T01:37:18Z" finished-at="2017-10-31T01:37:30Z">
+    <test name="Default test" duration-ms="45" started-at="2022-01-17T19:34:36Z" finished-at="2022-01-17T19:34:36Z">
+      <class name="com.Collections.ListTestOne">
+        <test-method status="PASS" signature="getArrayList()[pri:0, instance:com.Collections.ListTestOne@610694f1]" name="getArrayList" duration-ms="12" started-at="2022-01-17T11:34:36Z" finished-at="2022-01-17T11:34:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getInterviewQuestions -->
-      </class> <!-- dummy.TestTwo -->
+        </test-method> <!-- getArrayList -->
+      </class> <!-- com.Collections.ListTestOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -115,9 +116,9 @@ public class TestPracticeFour {
 
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait driverWait = new WebDriverWait(driver, 60);
-		driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
 		
 		
 		String tableXpath = "";
@@ -350,7 +351,7 @@ public class TestPracticeFour {
 		
 		ProfilesIni profile = new ProfilesIni();
 		FirefoxProfile myprofile = profile.getProfile("Arun");
-		FirefoxDriver driver = new FirefoxDriver(myprofile);
+		FirefoxDriver driver = new FirefoxDriver((Capabilities) myprofile);
 		driver.get("https://www.google.com");
 		driver.close();
 	}

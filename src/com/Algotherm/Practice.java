@@ -68,9 +68,9 @@ public class Practice {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		WebDriverWait driverWait = new WebDriverWait(driver, 60);
-		driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
-		driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
+		//driverWait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath(""))));
 
 		List<WebElement> list = driver.findElements(By.xpath(""));
 
